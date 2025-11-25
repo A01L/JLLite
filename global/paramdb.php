@@ -1,8 +1,8 @@
 <?php
     $ectr_protcol="https";
     $ectr_host="localhost";
-    $ectr_db="jjl";
-    $ectr_login="jjl_usr";
-    $ectr_password="YuhVv~%:7*R9-W~b";
+    $ectr_db="db";
+    $ectr_login="login";
+    $ectr_password="password";
     $ectr_charset = "utf8";
 ?>
