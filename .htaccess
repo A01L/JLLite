@@ -1,0 +1,13 @@
+RedirectMatch 403 ^/global/router/$
+RedirectMatch 403 ^/global/main.php$
+RedirectMatch 403 ^/global/config.php$
+RedirectMatch 403 ^/containers/$
+
+ErrorDocument 403 /containers/error_pages/403/403.html
+ErrorDocument 404 /containers/error_pages/404/404.html
+ErrorDocument 500 /containers/error_pages/500/500.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php
